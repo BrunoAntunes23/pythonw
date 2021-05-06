@@ -1,16 +1,49 @@
-# This is a sample Python script.
+usuario=[]
+nome=str(input("insra seu nome"))
+print("\n")
+email=str(input("insira seu email"))
+print("\n")
+cpf=int(input("insira seu cpf"))
+print("\n")
+cnpj=int(input("insira seu cnpj"))
+print("\n")
+telefone=input("insira seu telefone")
+print("\n")
+cep=input("insira seu cep")
+print("\n")
+logradouro=input("insira o logradouro")
+print("\n")
+numero=input("insira o numero")
+print("\n")
+bairro=input("insira o Bairro")
+print("\n")
+cidade=input("insira a cidade")
+print("\n")
+estado=input("insira o estado")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+usuario={
+    "nome":nome,
+    "email":email,
+    "cpf":cpf,
+    "cnpj":cnpj,
+    "tel":telefone,
+    "cep":cep,
+    "logradouro":logradouro,
+    "numero":numero,
+    "Bairro":bairro,
+    "Cidade":cidade,
+    "Estado":estado,
+
+}
+
+print(usuario)
+opc=str(input("\n insira qual campo deseja remover(nome,email,cpf,cnpj,tel,cep,logradouro,\n,numero,Bairro,Cidade,Estado) \n"))
+#remoção de items
+def remocao(opc):
+    usuario.pop(opc)
+remocao(opc)
+print(usuario)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
